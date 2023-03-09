@@ -1,22 +1,20 @@
-import logo from "./logo.svg";
 import "./App.css";
+import { useEffect } from "react";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { themeChange } from "theme-change";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
+  useEffect(() => {
+    themeChange(false);
+    // 👆 false parameter is required for react project
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>a</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <div />
-      </header>
+    <div>
+      <Header />
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Footer />
     </div>
   );
 }
