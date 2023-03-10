@@ -20,12 +20,13 @@ export default function Header() {
         ease: "easeInOut",
       });
     // eslint-disable-next-line no-unused-expressions
-    !mobileMenuVisible && gsap.from(".abc", { x: 0, duration: 0 });
+    !mobileMenuVisible &&
+      gsap.from(".mobile-menu__link", { x: 0, duration: 0 });
   }
   useEffect(() => {
     animateLinks();
     return () => {
-      gsap.set(".abc", { x: 0, duration: 0 });
+      gsap.set(".mobile-menu__link", { x: 0, duration: 0 });
     };
   }, [mobileMenuVisible]);
   return (
@@ -41,16 +42,16 @@ export default function Header() {
           </div>
           <div className="flex justify-between items-center">
             <div className="text-lg gap-6  uppercase hidden lg:flex">
-              <Link to="/home">Home</Link>
-              <Link to="/home">Products</Link>
-              <Link to="/home">Services</Link>
-              <Link to="/home">About&nbsp;us</Link>
+              <Link to="/">Home</Link>
+              <Link to="/products">Products</Link>
+              <Link to="/services">Services</Link>
+              <Link to="/about">About&nbsp;us</Link>
             </div>
             <button
               type="button"
-              className="btn hidden md:inline-block btn-warning ml-10"
+              className="btn hidden md:inline-block glass ml-10 text-white text-lg"
             >
-              Call Now
+              Get Quotation
             </button>
           </div>
         </header>
@@ -66,16 +67,32 @@ export default function Header() {
               onClick={() => setMobileMenuVisible(!mobileMenuVisible)}
               className="text-8xl ml-4 p-3 block"
             />
-            <Link to="/home" className="mobile-menu__link">
+            <Link
+              to="/"
+              className="mobile-menu__link"
+              onClick={() => setMobileMenuVisible(!mobileMenuVisible)}
+            >
               Home
             </Link>
-            <Link to="/home" className="mobile-menu__link">
+            <Link
+              to="/products"
+              className="mobile-menu__link"
+              onClick={() => setMobileMenuVisible(!mobileMenuVisible)}
+            >
               Products
             </Link>
-            <Link to="/home" className="mobile-menu__link">
+            <Link
+              to="/services"
+              className="mobile-menu__link"
+              onClick={() => setMobileMenuVisible(!mobileMenuVisible)}
+            >
               Services
             </Link>
-            <Link to="/home" className="mobile-menu__link">
+            <Link
+              to="/about"
+              className="mobile-menu__link"
+              onClick={() => setMobileMenuVisible(!mobileMenuVisible)}
+            >
               About&nbsp;us
             </Link>
           </div>

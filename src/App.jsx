@@ -5,7 +5,7 @@ import { themeChange } from "theme-change";
 import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import HeroSection from "./pages/Home/HeroSection";
+import Home from "./pages/Home/Home";
 
 function App() {
   useEffect(() => {
@@ -15,10 +15,10 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <div className="mt-[65px]">
+      <div className="mt-[65px] container mx-auto">
         <Routes>
-          <Route path="/home" element={<HeroSection />} />
-          <Route path="/" element={<HeroSection />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
       <Footer />
