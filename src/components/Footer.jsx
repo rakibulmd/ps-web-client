@@ -2,14 +2,14 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="m-5">
-      <h2 className="mb-4 text-2xl text-green-700 font-bold">Change theme</h2>
-      <div className="flex gap-4 flex-wrap">
+    <div className="mt-auto p-2 bg-neutral">
+      <h2 className="mb-1 text-md text-warning font-bold ">Change theme</h2>
+      <div className="flex gap-1 flex-wrap">
         <button
           type="button"
           data-act-class="shadow-outline"
           data-set-theme="winter"
-          className="btn btn-primary"
+          className="btn btn-primary btn-sm"
         >
           Default
         </button>
@@ -17,7 +17,7 @@ export default function Footer() {
           type="button"
           data-act-class="shadow-outline"
           data-set-theme="dark"
-          className="btn btn-primary"
+          className="btn btn-primary btn-sm"
         >
           Dark
         </button>
@@ -25,7 +25,7 @@ export default function Footer() {
           type="button"
           data-act-class="shadow-outline"
           data-set-theme="light"
-          className="btn btn-primary"
+          className="btn btn-primary btn-sm"
         >
           Light
         </button>
@@ -33,11 +33,12 @@ export default function Footer() {
           type="button"
           data-act-class="shadow-outline"
           data-set-theme="emerald"
-          className="btn btn-primary"
+          className="btn btn-primary btn-sm"
         >
           Emerald
         </button>
       </div>
+      <p className="py-2 text-white">Copyright 2023 @printing solution</p>
     </div>
   );
 }
