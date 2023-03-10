@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
-// import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { HiOutlineXMark } from "react-icons/hi2";
 
