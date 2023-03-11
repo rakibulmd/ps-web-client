@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <div className="mt-[65px] container mx-auto">
+      <div className="mt-[62px]">
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/" element={<Home />} />

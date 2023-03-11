@@ -32,7 +32,7 @@ export default function Header() {
     <div className="bg-primary text-white fixed top-0 left-0 right-0 z-50 ">
       <div className="container mx-auto px-3 py-4 md:py-2">
         <header className="flex justify-between items-center">
-          <div className="font-bold uppercase text-lg md:text-xl lg:text-2xl flex gap-2 items-center">
+          <div className="font-bold uppercase text-lg md:text-xl lg:text-2xl flex gap-2 items-center cursor-pointer">
             <FaBars
               className="lg:hidden text-3xl mr-4"
               onClick={handleHamburgerMenu}
@@ -61,7 +61,7 @@ export default function Header() {
         mobileMenuVisible ? "translate-x-0" : "-translate-x-full"
       }`}
         >
-          <div className="flex flex-col flex-1 bg-primary/80 gap-5 backdrop-blur-sm tracking-wider text-center text-shadow">
+          <div className="flex cursor-pointer flex-col flex-1 bg-primary/80 gap-5 backdrop-blur-sm tracking-wider text-center text-shadow">
             <HiOutlineXMark
               onClick={() => setMobileMenuVisible(!mobileMenuVisible)}
               className="text-8xl ml-4 p-3 block"
