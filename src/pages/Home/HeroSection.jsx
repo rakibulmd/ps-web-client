@@ -45,14 +45,14 @@ export default function HeroSection() {
       .to(".frame-2", { autoAlpha: 0, x: "100%" }, "frame2+=6");
     // .to(".vernon-printer", { autoAlpha: 0, x: "-100%" }, "frame2+=3");
     return () => {
-      // tl.pause();
+      tl.pause();
     };
   }, []);
   useLayoutEffect(() => {
-    tl.play();
+    // tl.play();
   }, []);
   return (
-    <div className="relative text-neutral h-[450px] w-screen overflow-hidden">
+    <div className="h-[400px] w-full overflow-hidden sticky top-[63px] left-0 -z-10">
       <div className="frame-1 w-full h-full absolute">
         <img
           className="ps-logo absolute w-[100px] lg:w-[100px] h-auto top-[5%] left-[50%] translate-x-[-50%]"
@@ -74,46 +74,45 @@ export default function HeroSection() {
           src={mycodingLogo}
           alt="Vernon bach ink jet printer"
         />
-        <h2 className="heading-1-1 text-xl md:text-2xl lg:text-5xl uppercase italic font-bold text-center tracking-wide absolute w-full top-[60%] invisible">
+        <h2 className="heading-1-1 text-xl md:text-2xl lg:text-4xl uppercase italic font-bold text-center tracking-wide absolute w-full top-[70%] invisible">
           CIJ Ink Jet Printer
         </h2>
-        <h2 className="heading-1-2 text-xl md:text-2xl lg:text-5xl uppercase italic font-bold text-center tracking-wide absolute w-full top-[60%] invisible">
+        <h2 className="heading-1-2 text-xl md:text-2xl lg:text-4xl uppercase italic font-bold text-center tracking-wide absolute w-full top-[70%] invisible">
           Thermal Ink Jet Printer
         </h2>
-        <h2 className="heading-1-3 text-xl md:text-2xl lg:text-5xl uppercase italic font-bold text-center tracking-wide absolute w-full top-[60%] invisible">
+        <h2 className="heading-1-3 text-xl md:text-2xl lg:text-4xl uppercase italic font-bold text-center tracking-wide absolute w-full top-[70%] invisible">
           Hand-held Printers
         </h2>
-        <h2 className="heading-1-4 text-xl md:text-2xl lg:text-5xl uppercase italic font-bold text-center tracking-wide absolute w-full top-[60%] invisible">
+        <h2 className="heading-1-4 text-xl md:text-2xl lg:text-4xl uppercase italic font-bold text-center tracking-wide absolute w-full top-[70%] invisible">
           Conveyors & rewinders
         </h2>
-        <h2 className="heading-1-5  text-primary text-xl md:text-2xl lg:text-5xl uppercase italic font-bold text-center tracking-wide absolute w-full top-[60%] invisible">
+        <h2 className="heading-1-5  text-primary text-xl md:text-4xl lg:text-5xl uppercase italic font-bold text-center tracking-tight absolute w-full top-[70%] invisible">
           Complete bach coding solution
         </h2>
       </div>
 
       <div className="frame-2 absolute w-full h-full">
-        <h2 className="headline1 text-xl md:text-2xl lg:text-4xl uppercase italic font-bold text-center tracking-wide absolute w-full top-[20%] invisible">
+        <h2 className="headline1 text-xl md:text-2xl lg:text-4xl uppercase italic font-bold text-center tracking-wide absolute w-full top-[5%] invisible">
           <span className="text-neutral text-lg md:text-xl lg:text-2xl">
-            {" "}
-            Sole distributor of{" "}
+            Sole distributor of
           </span>
           <br /> Vernon Bach Hubei Tech. Ltd
         </h2>
         <img
-          className="vernon-printer absolute w-[250px] h-auto top-[50%] left-[35%] translate-x-[-50%]"
+          className="vernon-printer absolute w-[250px] h-auto top-[30%] left-[35%] translate-x-[-50%]"
           src={vernonBachPrinter}
           alt="Vernon bach ink jet printer"
         />
-        <h3 className="vernon-printer-info text-lg md:text-xl lg:text-2xl capitalize tracking-wide absolute w-full top-[60%] left-[50%] invisible">
+        <h3 className="vernon-printer-info text-lg md:text-xl lg:text-2xl capitalize tracking-wide absolute w-full top-[40%] left-[50%] invisible">
           Technology from GERMANY
         </h3>
-        <h3 className="vernon-printer-info text-lg md:text-xl lg:text-2xl capitalize tracking-wide absolute w-full top-[68%] left-[50%] invisible">
+        <h3 className="vernon-printer-info text-lg md:text-xl lg:text-2xl capitalize tracking-wide absolute w-full top-[48%] left-[50%] invisible">
           3 years warranty
         </h3>
-        <h3 className="vernon-printer-info text-lg md:text-xl lg:text-2xl capitalize tracking-wide absolute w-full top-[76%] left-[50%] invisible">
+        <h3 className="vernon-printer-info text-lg md:text-xl lg:text-2xl capitalize tracking-wide absolute w-full top-[56%] left-[50%] invisible">
           Reliable and trouble-free
         </h3>
-        <h3 className="vernon-printer-info text-lg md:text-xl lg:text-2xl capitalize tracking-wide absolute w-full top-[84%] left-[50%] invisible">
+        <h3 className="vernon-printer-info text-lg md:text-xl lg:text-2xl capitalize tracking-wide absolute w-full top-[64%] left-[50%] invisible">
           Hi-speed application
         </h3>
       </div>

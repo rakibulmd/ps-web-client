@@ -29,7 +29,7 @@ export default function Header() {
     };
   }, [mobileMenuVisible]);
   return (
-    <div className="bg-primary text-white fixed top-0 left-0 right-0 z-50 ">
+    <div className="bg-primary text-white fixed top-0 left-0 right-0 z-50 shadow-md">
       <div className="container mx-auto px-3 py-4 md:py-2">
         <header className="flex justify-between items-center">
           <div className="font-bold uppercase text-lg md:text-xl lg:text-2xl flex gap-2 items-center cursor-pointer">
