@@ -1,6 +1,6 @@
 export default function PsBenefits() {
   return (
-    <div className="bg-base-100">
+    <div className="bg-primary text-base-200">
       <div className="container mx-auto py-8 p-3">
         <h2 className="font-bold text-xl md:text-3xl lg:text-5xl">
           Why stay with us?

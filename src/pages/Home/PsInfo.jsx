@@ -1,6 +1,6 @@
 export default function PsInfo() {
   return (
-    <div className="bg-primary text-white">
+    <div className="bg-base-100">
       <div className="container mx-auto py-8 p-3">
         <h2 className="font-bold text-xl md:text-3xl lg:text-5xl">
           9+ years of excellence

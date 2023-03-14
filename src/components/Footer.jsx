@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
 export default function Footer() {
+  const navigate = useNavigate();
+
   return (
     <div className="mt-auto p-2 bg-neutral">
       <div className="container mx-auto">
@@ -40,6 +43,15 @@ export default function Footer() {
               Emerald
             </button>
           </div>
+        </div>
+        <div className="py-3">
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={() => navigate("/internal/login")}
+          >
+            Management Login
+          </button>
         </div>
         <p className="text-white text-center font-mono border-t ">
           Copyright 2023 @PRINTING SOLUTION
